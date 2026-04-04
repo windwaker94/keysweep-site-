@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to KeySweep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+    <svg id="iconMoon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    <svg id="iconSun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/>
+      <line x1="12" y1="1" x2="12" y2="3"/>
+      <line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/>
+      <line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+  </button>
+
+  <div class="page">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="app-icon anim" style="--d:100">
+        <div class="app-icon-glow"></div>
+        <div class="app-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M7 5V19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M7 12L15 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M7 12L16 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <h1 class="hero-title anim" style="--d:200">Thanks for installing KeySweep</h1>
+      <p class="hero-sub anim" style="--d:300">Clean your keyboard without accidental input.<br>Here's how it works.</p>
+    </div>
+
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step anim" style="--d:400">
+        <div class="step-num">1</div>
+        <p class="step-text">Click the <strong>KeySweep icon</strong> in your browser toolbar and press Start Cleaning.</p>
+      </div>
+      <div class="step anim" style="--d:500">
+        <div class="step-num">2</div>
+        <p class="step-text">The screen goes fullscreen and <strong>blocks your keyboard</strong>. Clean freely - random presses won't do anything.</p>
+      </div>
+      <div class="step anim" style="--d:600">
+        <div class="step-num">3</div>
+        <p class="step-text">When done, hold <span class="key-badge">esc</span> for 3 seconds to exit.</p>
+      </div>
+    </div>
+
+    <!-- F-key note -->
+    <div class="note anim" style="--d:700">
+      <div class="note-label">Heads up</div>
+      <p>The top row (Esc, F1-F12, brightness, volume) can't be blocked. macOS handles those at the system level, before Chrome can intercept them. Skip that row entirely. The bottom row has modifier keys (<span class="key-badge">&#8984;</span> <span class="key-badge">&#8997;</span> <span class="key-badge">&#8963;</span> <span class="key-badge">fn</span>) that can trigger system shortcuts if pressed together, so clean those one key at a time.</p>
+    </div>
+
+    <!-- Support -->
+    <div class="support anim" style="--d:800">
+      <p class="support-text">
+        KeySweep is free and always will be.<br>
+        If it saved you a headache, consider supporting the project.
+      </p>
+      <a class="donate-btn" href="https://ko-fi.com/windwaker_" target="_blank">
+        Support on Ko-fi
+      </a>
+      <p class="support-footer">No account needed. One-time, any amount.</p>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+
+  <!-- Ko-fi floating widget -->
+  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+  <script>
+    kofiWidgetOverlay.draw('windwaker_', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#e8e8e6',
+      'floating-chat.donateButton.text-color': '#1a1a1d'
+    });
+  </script>
+</body>
+</html>
