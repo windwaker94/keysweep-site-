@@ -275,35 +275,30 @@ body {
 .support-text {
   font-size: 13.5px;
   color: var(--text-2);
-  margin-bottom: 20px;
-  line-height: 1.65;
+  margin-bottom: 24px;
+  line-height: 1.7;
 }
 
-.donate-btn {
-  display: inline-block;
-  padding: 12px 36px;
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  text-decoration: none;
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: -0.1px;
-  transition: background 0.2s, transform 0.12s, color 0.4s;
-}
-
-.donate-btn:hover {
-  background: var(--btn-hover);
-}
-
-.donate-btn:active {
-  transform: scale(0.96);
+.support-arrow {
+  text-align: left;
+  font-size: 24px;
+  color: var(--text-4);
+  margin-top: 20px;
+  padding-bottom: 40px;
+  transition: color 0.4s ease;
 }
 
 .support-footer {
-  margin-top: 14px;
-  font-size: 11px;
-  color: var(--text-4);
+  font-size: 12px;
+  color: var(--text-3);
   line-height: 1.5;
+}
+
+/* Ko-fi button fix for longer text */
+.floatingchat-container-wrap {
+  min-width: 220px !important;
+}
+
+.floating-chat-kofi-popup-btn {
+  min-width: 200px !important;
 }
